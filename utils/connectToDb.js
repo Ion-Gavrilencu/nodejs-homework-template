@@ -1,7 +1,7 @@
 
 const mongoose = require("mongoose");
 const colors = require("colors");
-const dontenv = require("dotenv");
+require("dotenv").config();
 
 async function connectToDb() {
   try {

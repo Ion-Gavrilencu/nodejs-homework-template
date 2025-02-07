@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts List</title>
+    <!-- This links to Socket.io client JavaScript bundle via CDN. -->
+    <script
+      src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+      integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>ContactsApp</h1>
+
+      <div id="message-bar">
+        <p id="notification"></p>
+      </div>
+
+      <form class="container" id="messageBox">
+        <h2>Trimite un mesaj</h2>
+        <textarea
+          rows="5"
+          width="100%"
+          name="message"
+          id="message"
+          placeholder="Enter your message..."
+        ></textarea>
+        <button>SEND MESSAGE</button>
+      </form>
+    </main>
+
+    <!-- Scripts -->
+    <!-- Link to the JavaScript file-->
+    <script src="./index.js" type="module"></script>
+
+    
+  </body>
+</html>
